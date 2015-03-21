@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" http-equiv="content-type">
+	<title>BobWorm</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/portlet.css">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script language="javascript" src="js/libraries/jsLibrary-v1.0.js"></script>
+    <script language="javascript" src="js/BobWorm/Gameplay.js"></script>
+	<script language="javascript" src="js/BobWorm/matrix.js"></script>
+	<script language="javascript" src="js/BobWorm/point.js"></script>
+	<script language="javascript" src="js/BobWorm/food.js"></script>
+	<script language="javascript" src="js/BobWorm/worm.js"></script>
+	<script language="javascript" src="js/BobWorm/DoctorWeb.js"></script>
+	<script language="javascript" src="js/onload.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="column">
+        <div class="portlet">
+            <div class="portlet-header">Имя игрока</div>
+            <div class="portlet-content">
+                <div class="liveInput ui-widget">
+                    <input type="text" id="user" autofocus="autofocus">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="column play-field">
+        <div class="portlet play-field">
+            <div class="portlet-header">Игровое поле</div>
+            <div class="portlet-content">
+                <div id="matrix1"></div>
+            </div>
+
+            <div id="message" class="ui-widget-content ui-corner-all">
+                <div id="start"></div>
+                <div id="gameOver"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+
+        <div class="portlet">
+            <div class="portlet-header">Счёт игры</div>
+            <div class="portlet-content"><span id="score">0</span></div>
+        </div>
+
+        <div class="portlet">
+            <div class="portlet-header">Уровень игры</div>
+            <div class="portlet-content"><span id="level">0</span></div>
+        </div>
+
+        <div class="portlet">
+            <div class="portlet-header">Тайиер</div>
+            <div class="portlet-content"><span id="timer">0</span></div>
+        </div>
+
+        <audio>
+            <source src="audio/birdsong.mp3">
+        </audio>
+    </div>
+
+</div>
+</body>
+</html>
